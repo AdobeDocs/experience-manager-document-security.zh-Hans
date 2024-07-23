@@ -5,9 +5,9 @@ uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
 source-git-commit: 8a10fb9fa24409b695fdaf1431228c6281bf78c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 84%
 >
 >[AEM Document Security Extension for Microsoft Office 简介](../document-security-extension-microsoft-office.md) {#introduction-to-aem-document-security-extension-for-microsoft-office}
 >
->使用Document Security Extension for Microsoft Office，您可以将预定义的机密性设置应用于Microsoft Office文件。
+>使用 Microsoft Office 文档安全扩展，您可以将预定义的机密性设置应用于 Microsoft Office 文件。
 
 >[!NOTE]
 >
