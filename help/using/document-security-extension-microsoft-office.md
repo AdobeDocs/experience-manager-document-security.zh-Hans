@@ -82,7 +82,7 @@ Document Security 管理员和用户创建策略。管理员创建对所有授�
   </tr>
   <tr>
    <td><p>有关此产品版本的修补程序更新、技术说明和附加信息</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support">Experience Cloud 技术支持</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support">Experience Cloud 技术支持</a></p> </td>
   </tr>
  </tbody>
 </table>
