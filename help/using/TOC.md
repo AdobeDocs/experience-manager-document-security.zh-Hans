@@ -2,7 +2,7 @@
 audience: end-user
 user-guide-title: Adobe Experience Manager Document Security 指南
 breadcrumb-title: Document Security 指南
-user-guide-description: Document Security Extension for Microsoft® Office 可确保只有经您授权的人员才能使用包含您的知识产权的 Word、Excel 和 PowerPoint 文件。
+user-guide-description: Document Security Extension for Microsoft® Office 可确保只有经您授权的人员才能使用包含知识产权属性的 Word、Excel 和 PowerPoint 文件。
 feature: Document Security
 role: User
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
