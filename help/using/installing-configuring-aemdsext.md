@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2845'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
 ### Document Security Extension 客户端 {#document-security-extension-client}
 
-确保要安装 Document Security Extension 的计算机满足以下最低配置：
+确保要安装 Document Security Extension 的设备满足以下最低配置：
 
-* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、朝鲜语、简体中文和繁体中文的32位或64位版本的Microsoft Windows 11上的Microsoft Office 2019 Professional Plus。
+* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Microsoft Windows 11 并安装 Microsoft Office 2019 Professional Plus。
 
-* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、朝鲜语、简体中文和繁体中文的32位或64位版本的Microsoft Windows 10。
+* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Microsoft Windows 10。
 
   **注意：** *Document Security Extension for Microsoft Office 应该也可以在 Microsoft Surface 设备上使用。*
 
-* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、朝鲜语、简体中文和繁体中文的32位或64位版本的Office 2016、2019和Microsoft Office桌面应用程序安装为Office 365的一部分。
+* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Office 2016、2019 以及作为 Office 365 一部分安装的 Microsoft Office 桌面应用程序。
 
   **注意**：*AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 应用程序的第三方插件。由于此扩展可能与第三方插件冲突，在安装 Document Security Extension for Microsoft Office 之前，必须卸载 Microsoft Office 应用程序的任意非 Adobe 插件。Adobe 不提供对安装了第三方插件的 Document Security Extensions for Microsoft Office 应用程序的支持。*
 
