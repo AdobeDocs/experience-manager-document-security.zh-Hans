@@ -6,9 +6,9 @@ contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 82%
 
 ## 系统要求 {#system-requirements}
 
-* Microsoft® Windows 11上的32位或64位版本的Microsoft® Office 2019专业增强版
-* Microsoft® Office 2016、Office 2019或Office桌面应用程序的32位或64位版本，这些应用程序作为Microsoft® Windows 10上Office 365的一部分安装
+* Microsoft® Windows 11 上的 Microsoft® Office 2019 Professional Plus 的 32 位或 64 位版本
+* 适用于 Microsoft® Windows 10 的 Microsoft® Office 2016、Office 2019 或作为 Office 365 组件安装的 Office 桌面应用程序（32 位或 64 位版本）
 * 注意：Document Security Extension for Microsoft® Office 有望在 Microsoft® Surface 设备上正常工作。
 * 1.3 GHz 处理器或更高
 * 2 GB RAM
