@@ -1,19 +1,19 @@
 ---
-title: 安装和配置 AEM Document Security Extension for Microsoft Office
+title: 安装和配置AEM Document Security Extension for Microsoft Office
 description: 本文档指导您完成安装和配置 Adobe Experience Manager Document Security Extension 6.2 for Microsoft Office。
 uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# 安装和配置 AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# 安装和配置AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 本文档指导您完成安装和配置 Adobe Experience Manager Document Security Extension for Microsoft Office。
 
@@ -56,7 +56,7 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
 * 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Microsoft Windows 11 并安装 Microsoft Office 2019 Professional Plus。
 
-* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Microsoft Windows 10。
+* 英语、法语、德语、日语、意大利语、西班牙语、巴西语、葡萄牙语、朝鲜语、简体中文和繁体中文的32位或64位版本的Microsoft Windows 10。
 
   **注意：** *Document Security Extension for Microsoft Office 应该也可以在 Microsoft Surface 设备上使用。*
 
@@ -72,7 +72,7 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
 要使用 Document Security Extension，请确保您可以连接到 Adobe LiveCycle Rights Management ES2 和更高版本或 AEM 6.0 Forms 或更高版本的 Document Security 插件。
 
-## 安装 Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
+## 安装Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
 
 安装程序可以从[下载页面](download-installer.md)下载。无法直接自定义安装程序可执行文件，但它可以在交互模式或静默模式下安装。要安装软件，请以管理员身份登录 Windows。
 
@@ -98,7 +98,7 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## 预配置安装程序以连接到 Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## 预配置安装程序以连接到Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 您可以预先配置 Microsoft Office 安装程序的文档安全扩展，使其指向 LiveCycle 或 AEM 服务器。这样做可确保安装了 Microsoft Office 文档安全扩展的用户无需配置连接即可使用这些功能。这样，用户可以打开受保护文档而无需配置。但是，用户无法保护新文档，除非配置客户端使用特定服务器。
 
@@ -182,13 +182,13 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 * 使用默认策略保护所有文档。
 * 允许用户在无法连接到服务器时选择以无保护格式保存文件。这种灵活性使得您可以考虑用户在断开网络连接时创建文档的情况（例如，在飞机上时）。
 
-在启用自动应用策略功能之后，以下情况中使用默认策略保护文档：
+在启用自动应用策略功能后，在下列情况下使用默认策略保护文档：
 
 * 用户编辑并保存新创建的文档
 * 用户编辑并保存无保护的文档
 * 用户打开一个以默认文档打开的应用程序，编辑然后保存该文档
 
-### 在 MSI 文件中配置自动应用策略功能  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### 在MSI文件中配置自动应用的策略功能 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 在开始之前，请预配置安装程序指向 LiveCycle 或 AEM Forms Server，如本文中前面所述。
 
@@ -209,12 +209,12 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>启用或禁用自动应用策略功能。</p> <p><code>1</code>：启用</p> <p>0：禁用</p> </td>
+   <td><p>启用或禁用自动应用的策略功能。</p> <p><code>1</code>：启用</p> <p>0：禁用</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>该策略是保存新文档时使用的 GUID。此值适用于自动应用策略功能。</p> </td>
+   <td><p>该策略是保存新文档时使用的 GUID。此值适用于自动应用的策略功能。</p> </td>
    <td><p>在 RM 服务器上显示的十六进制策略 ID</p> </td>
   </tr>
   <tr>
@@ -247,9 +247,9 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ## 启用新文档的自动保护 {#enabling-automatic-protection-of-new-documents}
 
-管理员可以启用自动保护用户保存的任何文档的功能。管理员在 Document Security Extension for Microsoft Office 的安装程序中配置自动应用策略功能。
+管理员可以启用自动保护用户保存的任何文档的功能。管理员在Document Security Extension for Microsoft Office的安装程序中配置自动应用的策略功能。
 
-如果启用了自动应用策略，则用户保存的所有文档将受默认策略保护。此操作适用于以下情况：
+如果启用了自动应用策略，则用户保存的所有文档将受默认策略保护。 此操作适用于以下情况：
 
 * 用户创建新文档、编辑并保存它时。
 * 用户打开无保护文档、编辑并保存它时。

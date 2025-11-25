@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 100%
 1. 打开 AEM Forms 管理 UI。
 1. 导航到“服务”>“Document Security”>“配置”>“服务器配置”。
 1. 启用“允许扩展身份验证”选项。
-1. 指定默认 URL 扩展身份验证登录 URL。默认 URL 为 http://localhost:8080/edc/extendedauthentication/welcome.jsp。
+1. 指定默认 URL 扩展身份验证登录 URL。默认URL为http://localhost:8080/edc/extendedauthentication/welcome.jsp。
 
    单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -373,7 +373,7 @@ Document Security Extension for Microsoft® Office 限制特定 Word、Excel 和
 
 您可以使用与打开任何其他文件相同的方法打开受策略保护的文件。如果您尚未登录 Document Security，系统将提示您登录。也就是说，如果您没有连接到互联网，您可以离线打开该文件。如果您取消登录过程，则会拒绝访问。
 
-如果您没有权限打开文件，则会通知您访问被拒绝。如果撤销了文件访问权限，您也可能会被定向到该文件的更新版本（如果可用）。如果您无法打开受策略保护的文件并需要更多帮助，请联系文件发布者。
+如果您没有权限打开文件，则会通知您访问被拒绝。如果撤销了文件访问权限，您也可能会被定向到该文件的更新版本（如果可用）。 如果您无法打开受策略保护的文件并需要更多帮助，请联系文件发布者。
 
 打开受保护文件时，文件名之后标题栏中的文本将说明文件受 AEM Document Security 保护。
 
@@ -407,13 +407,13 @@ Document Security Extension for Microsoft® Office 限制特定 Word、Excel 和
 
 ### 在启用了自动应用策略时保存文档 {#saving-documents-when-auto-apply-policy-is-enabled}
 
-如果管理员启用了自动应用策略功能，则在保存任何创建或编辑的文档时将自动保护该文档。
+如果您的管理员启用了自动应用策略功能，则您创建或编辑的任何文档在保存文档时都会自动受到保护。
 
-如果启用了自动应用策略，则 Document Security Extension for Microsoft® Office 提示您登录到 Document Security 服务器。输入您的用户名和密码，以便服务器可以验证您的身份。如果提供了正确的登录凭据，则将保存并保护该文档。
+如果启用了自动应用策略，Document Security Extension for Microsoft® Office将提示您登录Document Security服务器。 输入您的用户名和密码，以便服务器可以验证您的身份。如果提供了正确的登录凭据，则将保存并保护该文档。
 
 >[!NOTE]
 >
->如果您无法登录 Document Security，则文档可能会保存，也可能会不保存。这种情况取决于管理员如何配置自动应用策略。请与管理员确认这种情况下会如何处理文档。
+>如果您无法登录 Document Security，则文档可能会保存，也可能会不保存。此情况取决于管理员如何配置自动应用策略。 请与管理员确认这种情况下会如何处理文档。
 
 ### 为离线访问同步 {#synchronizing-for-offline-access}
 
