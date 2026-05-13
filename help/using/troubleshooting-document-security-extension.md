@@ -7,9 +7,20 @@ content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '284'
+TQID: https://experienceleague.adobe.com/3YVMcSeYDXCWkVeG8HmlJOgja9OwLqs1gpPWP8rhhs0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: fd5d26fd-7180-407d-bbd8-5f8a17f9c0b8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+workflow-type: tm+mt
+source-wordcount: 316
 ht-degree: 100%
 
 ---
@@ -24,15 +35,15 @@ ht-degree: 100%
 
 ### Microsoft Office 应用程序无法加载 Document Security Extension {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
-Windows 注册表中的 LoadBehavior 属性指定文档安全插件的运行时行为。如果 LoadBehavior 属性设置为 3，则所有插件自动加载。在安装 Document Security Extension for Microsoft Office 之前，请确保 LoadBehavior 属性值设置为 3。
+Windows 注册表中的 LoadBehavior 属性指定文档安全插件的运行时行为。 如果 LoadBehavior 属性设置为 3，则所有插件自动加载。 在安装 Document Security Extension for Microsoft Office 之前，请确保 LoadBehavior 属性值设置为 3。
 
-1. 在对 Windows 注册表进行更改之前，请先备份。有关详细说明，请参阅[如何修改 Windows 注册表](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
+1. 在对 Windows 注册表进行更改之前，请先备份。 有关详细说明，请参阅[如何修改 Windows 注册表](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在注册表编辑器中，浏览到 HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\Adobe.DRMIntegration.WordAddin or HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Word\Addins\Adobe.DRM。
 1. 将 **LoadBehavior** 属性的值设置为 3。
 
 1. 关闭注册表编辑器。
 
-有关 LoadBehavior 的详细信息，请参阅 [VSTO 增益集的注册表项](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&amp;redirectedfrom=MSDN#LoadBehavior)一文。
+有关 LoadBehavior 的详细信息，请参阅 [VSTO 增益集的注册表项](https://learn.microsoft.com/en-us/visualstudio/vsto/registry-entries-for-vsto-add-ins?view=vs-2022&redirectedfrom=MSDN#LoadBehavior)一文。
 
 ## 管理任务疑难解答 {#admintasks}
 
