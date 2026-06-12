@@ -212,7 +212,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 <table>
  <tbody>
   <tr>
-   <td><p><strong>密钥名称</strong></p> </td>
+   <td><p><strong>键名</strong></p> </td>
    <td><p><strong>描述</strong></p> </td>
    <td><p><strong>键</strong><strong></strong><strong>值默认值</strong></p> </td>
   </tr>
