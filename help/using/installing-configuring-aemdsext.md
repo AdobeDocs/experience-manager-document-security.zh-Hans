@@ -9,19 +9,22 @@ exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+    internal-label: Security
+source-git-commit: 97e24a5c1733b47777d7dcf165ceb3309bf41972
 workflow-type: tm+mt
-source-wordcount: 2933
+source-wordcount: '2933'
 ht-degree: 94%
-
 ---
-
 # 安装和配置AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 本文档指导您完成安装和配置 Adobe Experience Manager Document Security Extension for Microsoft Office。
@@ -29,7 +32,7 @@ ht-degree: 94%
 本文档包含有关以下任务的信息：
 
 * 安装 Document Security Extension for Microsoft Office。
-* 预先配置安装程序以指向 LiveCycle Rights Management ES2 或更高版本或者 AEM 6.0 Forms 或更高版本的 Document Security 插件。
+* 预先配置安装程序以指向 LiveCycle Rights Management ES2 或更高版本或者 AEM 6.0 Forms 或更高版本的 Document Security 附加组件。
 * 配置默认策略的自动应用
 
 ## 安装之前 {#before-you-install}
@@ -63,7 +66,7 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
 确保要安装 Document Security Extension 的设备满足以下最低配置：
 
-* 英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文和繁体中文的 32 位或 64 位版本 Microsoft Windows 11 并安装 Microsoft Office 2019 Professional Plus。
+* 在 Microsoft Windows 11 上运行的英语、法语、德语、日语、意大利语、西班牙语、巴西葡萄牙语、韩语、简体中文或繁体中文版 Microsoft Office 2019 Professional Plus 的 32 位或 64 位版本。
 
 * 英语、法语、德语、日语、意大利语、西班牙语、巴西语、葡萄牙语、朝鲜语、简体中文和繁体中文的32位或64位版本的Microsoft Windows 10。
 
@@ -79,7 +82,7 @@ AEM Document Security Extension for Microsoft Office 不支持 Microsoft Office 
 
 ### Document Security {#document-security}
 
-要使用 Document Security Extension，请确保您可以连接到 Adobe LiveCycle Rights Management ES2 和更高版本或 AEM 6.0 Forms 或更高版本的 Document Security 插件。
+要使用 Document Security Extension，请确保您可以连接到 Adobe LiveCycle Rights Management ES2 和更高版本或 AEM 6.0 Forms 或更高版本的 Document Security 附加组件。
 
 ## 安装Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
 
@@ -199,7 +202,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ### 在MSI文件中配置自动应用的策略功能 {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
-在开始之前，请预配置安装程序指向 LiveCycle 或 AEM Forms Server，如本文中前面所述。
+在开始之前，请预配置安装程序指向 LiveCycle 或 AEM Forms 服务器，如本文中前面所述。
 
 1. 单击 **[!UICONTROL 开始 > 程序 > Orca]**。
 
@@ -209,44 +212,44 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 1. 根据企业安装的是 Rights Management 还是 Document Security，相应编辑以下键名和键值。
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>键名</strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
-   <td><p><strong>键</strong><strong></strong><strong>值默认值</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>启用或禁用自动应用的策略功能。</p> <p><code>1</code>：启用</p> <p>0：禁用</p> </td>
-   <td><p>0</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>该策略是保存新文档时使用的 GUID。 此值适用于自动应用的策略功能。</p> </td>
-   <td><p>在 RM 服务器上显示的十六进制策略 ID</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
-   <td><p>服务器 URL。</p> </td>
-   <td><p>default.corp.com</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
-   <td><p>服务器端口号。</p> </td>
-   <td><p>1234</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
-   <td><p>确定在首次保存时如果客户端无法连接到服务器来保护文档，是否创建文档而不使用 Document Security 保护。</p> <p>1：允许无保护保存 </p> <p>0：在客户端无法连接到服务器来保存文档时阻止创建新文档。</p> </td>
-   <td><p>0</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><p><strong>键名</strong></p> </td>
+      <td><p><strong>描述</strong></p> </td>
+      <td><p><strong>键</strong><strong></strong><strong>值默认值</strong></p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
+      <td><p>启用或禁用自动应用的策略功能。</p> <p><code>1</code>：启用</p> <p>0：禁用</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
+      <td><p>该策略是保存新文档时使用的 GUID。 此值适用于自动应用的策略功能。</p> </td>
+      <td><p>在 RM 服务器上显示的十六进制策略 ID</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
+      <td><p>服务器 URL。</p> </td>
+      <td><p>default.corp.com</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
+      <td><p>服务器端口号。</p> </td>
+      <td><p>1234</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
+      <td><p>确定在首次保存时如果客户端无法连接到服务器来保护文档，是否创建文档而不使用 Document Security 保护。</p> <p>1：允许无保护保存 </p> <p>0：在客户端无法连接到服务器来保存文档时阻止创建新文档。</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->当您想提醒客户保护所有文件但又不强迫他们这样做时，`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE`此选项很有用。 当您知道客户在网络连接断开的情况下创建文档时，这也很有用。 您不希望阻止他们创建和保存文档。
+   >[!NOTE]
+   >
+   >当您想提醒客户保护所有文件但又不强迫他们这样做时，`AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE`此选项很有用。 当您知道用户在网络连接断开的情况下创建文档时，这也很有用。 您不希望阻止他们创建和保存文档。
 
 1. 将修改的文件保存到包含原始 MSI 文件的同一个目录。
 
@@ -267,7 +270,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 ## 启用无功能区用户界面 {#enable-ribbon-less-user-interface}
 
-您可通过在 Windows 注册表中修改设置来启用/禁用无功能区界面。 执行以下步骤来更新注册表并启用无功能区用户界面：
+您可通过在 Windows 注册表中修改设置来启用/禁用无功能区用户界面。 执行以下步骤来更新注册表并启用无功能区用户界面：
 
 1. 在对 Windows 注册表进行更改之前，请先备份。 有关详细说明，请参阅[如何修改 Windows 注册表](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在注册表编辑器中，导航到 HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 或 HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
@@ -281,7 +284,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 您可以更改 Windows 注册表设置以使动态水印与现有页眉和页脚共存。 注册表设置使水印仅在打印期间可用。 执行以下步骤来更新注册表并在打印期间启用水印：
 
-1. 在对 Windows 注册表进行更改之前，请先备份。 有关详细说明，请参阅[如何修改 Windows 注册表](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
+1. 在对 Windows 注册表进行更改之前，请先备份 Windows 注册表。 有关详细说明，请参阅[如何修改 Windows 注册表](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)。
 1. 在注册表编辑器中，导航到 HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 或 HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. 创建新的注册表项 **WatermarkMode**。
 1. 在 WatermarkMode 注册表项下，创建 DWORD **WatermarkMode**，并将 DWORD **WatermarkMode** 的值设置为 **1**。
@@ -300,11 +303,11 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
 * 对 CommonResources.dll 文件进行备份。 默认路径为：
 
-   * **（对于 32 位计算机上的 32 位 Office）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（对于 32 位计算机上的 32 位 Office）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **（对于 32 位计算机上的 64 位 Office）** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（对于 32 位计算机上的 64 位 Office）** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **（对于 64 位计算机上的 64 位 Office）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **（对于 64 位计算机上的 64 位 Office）** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
 * 确保您安装了 Microsoft Visual Studio 2008 或更高版本。 您也可以使用任何其他实用程序编辑 DLL 文件。
 * 提取 templates.zip 存档。 存档包含封面页的 .xlsx、.docx 和 .pptx 模板。 仅为文件类型 .xlsx、.docx 和 .pptx 使用提供的模板。 可以为其他文件类型创建自己的模板。 自定义模板以包含自定义消息和说明。 在以下位置可以找到 template.zip：
@@ -362,7 +365,7 @@ CommonResources.dll 文件包含有关资源模板的信息。 它包含两个�
 
    1. 在 Solution Explorer 中选定一个项目，在“项目”菜单中，单击“属性”。
    1. 选择“资源”选项卡。
-   1. 打开“资源设计器”工具栏，指向“添加资源”，单击箭头。 对于资源类型，选择“TEMPLATE_FILE”，然后单击“导入”。
+   1. 在“资源设计器”工具栏上，指向“添加资源”，单击箭头。 对于资源类型，选择“TEMPLATE_FILE”，然后单击“导入”。
    1. 在 **`Add existing file to resources`** 对话框中，浏览到 Resource.xlsx 文件，然后单击“打开”。 文件添加到 TEMPLATE_FILE 目录。
 
    >[!NOTE]
@@ -379,14 +382,14 @@ CommonResources.dll 文件包含有关资源模板的信息。 它包含两个�
 
 可以自定义 CommonResources.dll 文件以添加自定义封面页。 自定义文件之后，您可以在所有工作站上使用自定义文件手动替换原始文件，或者选择自动方法来替换文件。
 
-在大型环境中，手动将默认 `CommonResources.dll file` 替换为自定义 `CommonResources.dll` 文件不仅困难，而且繁琐。 您可以使用自行提取和打包工具（例如，WinZip Self-Extractor）来将自定义 CommonResources.dll 文件打包到 AEM Document Security Extension for Microsoft Office 安装程序。 以后，您可以将自定义安装程序分发到所有工作站。 此方法可减少使用自定义文件替换默认 `CommonResources.dll` 文件所需的时间。 它还可以确保所有工作站具有所需的 CommonResources.dll 文件。 自行提取和打包工具只不过是自动替换文件的众多可行方法之一。 您可以选择适合您环境的任意方法。
+在大型环境中，手动将默认 `CommonResources.dll file` 替换为自定义 `CommonResources.dll` 文件不仅困难，而且繁琐。 您可以使用自行提取和打包工具（例如，WinZip Self-Extractor）将自定义 CommonResources.dll 文件与 AEM Document Security Extension for Microsoft Office 安装程序一起打包。 以后，您可以将自定义安装程序分发到所有工作站。 此方法可减少使用自定义文件替换默认 `CommonResources.dll` 文件所需的时间。 它还可以确保所有工作站具有所需的 CommonResources.dll 文件。 自解压和打包工具只是自动替换文件的众多可行方法之一。 您可以选择适合您环境的任意方法。
 
 您可以执行以下步骤，将自定义 `CommonResources.dll` 文件打包到 AEM Document Security Extension for Microsoft Office 的安装程序中：
 
 1. 安装自行提取和打包工具。 例如，WinZip Self-Extractor。
 1. 创建新文件夹。 例如，YOUR_FOLDER_NAME
 1. 将 AEM Document Security Extension 的原始安装程序和自定义 CommonResources.dll 文件放在新创建的文件夹中。
-1. 在文件夹中创建批处理文件。 例如 YOUR_FOLDER_NAME\Installer.bat
+1. 在文件夹中创建批处理文件。 例如，YOUR_FOLDER_NAME\Installer.bat
 1. 打开批处理文件进行编辑，添加以下代码到批处理文件中：
 
    ```shell
@@ -420,7 +423,7 @@ CommonResources.dll 文件包含有关资源模板的信息。 它包含两个�
     endlocal
    ```
 
-   如果您在 JEE 上使用除了 LiveCycle Rights Management ES4 以及版本 11.0.0 之外的任何其他版本的 LiveCycle 或 AEM Forms，请更换注册表项的路径如下所示：
+   如果您在 JEE 上使用除了 LiveCycle Rights Management ES4 和 11.0.0 版本之外的任何其他版本的 LiveCycle 或 AEM Forms，请按如下所示替换注册表项路径：
 
    * (LiveCycle® Rights Management ES2 and version 9.0): *HKLM\SOFTWARE\Adobe/LiveCycle* *Rights Management ES2\9.0 *
    * (LiveCycle® Rights Management ES3 和版本 10.0)
@@ -431,7 +434,7 @@ CommonResources.dll 文件包含有关资源模板的信息。 它包含两个�
 1. **（仅适用于 AEM Document Security Extension for Microsoft Office 安装程序及 .exe 扩展名）** 替换以下代码行：
 
    `msiexec /i YOUR_FOLDER_NAME\MSI_NAME.msi`
-替换为
+   替换为
 
    `START /w YOUR_FOLDER_NAME\APPLICATION_NAME.exe`
 
